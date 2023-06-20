@@ -1,4 +1,4 @@
-# Use the modulo operator (%) to check which of the following numbers is even or odd:
+'''Use the modulo operator (%) to check which of the following numbers is even or odd:'''
 numbers = (1, 5, 20, 60/7)
 for num in numbers:
     if num % 2 == 0:
