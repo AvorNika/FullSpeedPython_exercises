@@ -3,17 +3,13 @@ sequence matches the sum of the previous two terms. Given the following recursiv
 definition implement (fib(n)). Check your results for the first numbers of the sequence: 0, 1, 1, 2, 3, 5, 8, 13, 21,
 34, 55, 89, . . .'''
 x = int(input())
-list1 = []
 
 
 def fib(n):
     if n <= 1:
         return n
     else:
-        a = fib(n - 2) + fib(n - 1)
-        list1.append(a)
-        return a
+        return fib(n - 1) + fib(n - 2)
 
 
 print(fib(x))
-print(list1[-x:])
